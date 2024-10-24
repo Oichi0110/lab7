@@ -44,7 +44,7 @@ public class Main {
             userParser.parse(FILE_USERS, usersHandler);
         }catch (SAXException se){
             System.out.println("Sax exception: " + se.getMessage());
-        } catch (Exception e){
+        }catch (Exception e){
             System.out.println(e.getMessage());
         }
 
@@ -71,10 +71,9 @@ public class Main {
             for (int i = 0; i < nodeList.getLength(); i++) {
                 System.out.println("- " + nodeList.item(i).getNodeValue());
             }
-
         }catch (IOException e){
             System.out.println("IOException: " + e.getMessage());
-        } catch (Exception e){
+        }catch (Exception e){
             System.out.println(e.getMessage());
         }
 
