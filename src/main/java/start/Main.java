@@ -34,7 +34,7 @@ public class Main {
             companyParser.parse(FILE_COMPANY, companyHandler);
         }catch (SAXException se){
             System.out.println("Sax exception: " + se.getMessage());
-        } catch (Exception e){
+        }catch(Exception e){
             System.out.println(e.getMessage());
         }
 
@@ -73,6 +73,7 @@ public class Main {
             }
         }catch (IOException e){
             System.out.println("IOException: " + e.getMessage());
+
         }catch (Exception e){
             System.out.println(e.getMessage());
         }
