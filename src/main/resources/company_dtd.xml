@@ -14,14 +14,14 @@
             <discount>22</discount>
         </product>
         <product id="2">
-            <car_name>adasd</car_name>
-            <car_body>sadasd</car_body>
+            <car_name>BMV</car_name>
+            <car_body>universal</car_body>
             <price>1232.2</price>
             <discount>40.21</discount>
         </product>
         <product id="3">
-            <car_name>asdasd</car_name>
-            <car_body>asdsad</car_body>
+            <car_name>Audi</car_name>
+            <car_body>Coupe</car_body>
             <price>5000.2</price>
             <discount>20.12</discount>
         </product>
