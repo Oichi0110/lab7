@@ -4,14 +4,20 @@ import handler.CompanyHandler;
 import handler.UsersHandler;
 import org.w3c.dom.Document;
 import org.w3c.dom.NodeList;
+<<<<<<< HEAD
 import org.xml.sax.SAXException;
+=======
+>>>>>>> 1.4.0
 
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.SAXParser;
 import javax.xml.parsers.SAXParserFactory;
 import javax.xml.transform.Transformer;
+<<<<<<< HEAD
 import javax.xml.transform.TransformerException;
+=======
+>>>>>>> 1.4.0
 import javax.xml.transform.TransformerFactory;
 import javax.xml.transform.stream.StreamResult;
 import javax.xml.transform.stream.StreamSource;
@@ -20,7 +26,10 @@ import javax.xml.xpath.XPathConstants;
 import javax.xml.xpath.XPathExpression;
 import javax.xml.xpath.XPathFactory;
 import java.io.File;
+<<<<<<< HEAD
 import java.io.IOException;
+=======
+>>>>>>> 1.4.0
 
 public class Main {
     private static File FILE_COMPANY = new File("D:/sitairis/Lab7/src/main/resources/company_dtd.xml").getAbsoluteFile();
@@ -32,9 +41,13 @@ public class Main {
             SAXParser companyParser = factory.newSAXParser();
             CompanyHandler companyHandler = new CompanyHandler();
             companyParser.parse(FILE_COMPANY, companyHandler);
+<<<<<<< HEAD
         }catch (SAXException se){
             System.out.println("Sax exception: " + se.getMessage());
         } catch (Exception e){
+=======
+        }catch(Exception e){
+>>>>>>> 1.4.0
             System.out.println(e.getMessage());
         }
 
@@ -42,9 +55,13 @@ public class Main {
             SAXParser userParser = factory.newSAXParser();
             UsersHandler usersHandler = new UsersHandler();
             userParser.parse(FILE_USERS, usersHandler);
+<<<<<<< HEAD
         }catch (SAXException se){
             System.out.println("Sax exception: " + se.getMessage());
         } catch (Exception e){
+=======
+        }catch (Exception e){
+>>>>>>> 1.4.0
             System.out.println(e.getMessage());
         }
 
@@ -72,9 +89,13 @@ public class Main {
                 System.out.println("- " + nodeList.item(i).getNodeValue());
             }
 
+<<<<<<< HEAD
         }catch (IOException e){
             System.out.println("IOException: " + e.getMessage());
         } catch (Exception e){
+=======
+        }catch (Exception e){
+>>>>>>> 1.4.0
             System.out.println(e.getMessage());
         }
 
@@ -85,8 +106,11 @@ public class Main {
             transformer.transform(new StreamSource(FILE_COMPANY), new StreamResult(new File("src/main/resources/output.html")));
 
             System.out.println("Преобразование завершено! Файл output.html создан.");
+<<<<<<< HEAD
         } catch (TransformerException e) {
             System.out.println("Transformer Exception: " + e.getMessage());
+=======
+>>>>>>> 1.4.0
         } catch (Exception e) {
             System.out.println(e.getMessage());
         }
