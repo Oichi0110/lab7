@@ -73,8 +73,7 @@ public class Main {
             }
         }catch (IOException e){
             System.out.println("IOException: " + e.getMessage());
-
-        }catch (Exception e){
+        } catch (Exception e){
             System.out.println(e.getMessage());
         }
 
